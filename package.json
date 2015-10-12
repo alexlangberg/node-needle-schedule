@@ -1,0 +1,49 @@
+{
+  "name": "needle-schedule",
+  "version": "1.0.0",
+  "description": "Schedule needle requests.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "covert": "^1.1.0",
+    "doctoc": "^0.15.0",
+    "eslint": "^1.6.0",
+    "faucet": "0.0.1",
+    "sinon": "^1.17.1",
+    "tape": "^4.2.1",
+    "watch": "^0.16.0"
+  },
+  "scripts": {
+    "test": "node test/*.js | faucet",
+    "lint": "eslint lib test || true",
+    "coverage": "covert test/*.js || true",
+    "watch": "watch 'clear && npm run lint && npm test && npm run coverage' lib test",
+    "doctoc": "doctoc --github --title \"# Changelog\" CHANGELOG.md",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexlangberg/node-needle-schedule.git"
+  },
+  "keywords": [
+    "needle",
+    "request",
+    "schedule",
+    "cron"
+  ],
+  "author": "Alex Langberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexlangberg/node-needle-schedule/issues"
+  },
+  "homepage": "https://github.com/alexlangberg/node-needle-schedule#readme",
+  "dependencies": {
+    "needle-retry": "^1.0.0",
+    "node-schedule": "^0.2.9",
+    "ramda": "^0.18.0"
+  }
+}
