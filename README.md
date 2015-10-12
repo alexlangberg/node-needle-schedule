@@ -33,8 +33,8 @@ The first parameter required by the setup function is an array of targets. An ex
 ```javascript
 [
   {
-    url: 'https://github.com',
-    rule: { second: [15, 35, 55] }
+    'url': 'https://github.com',
+    'rule': { second: [15, 35, 55] }
   }
 ]
 ```
