@@ -8,12 +8,12 @@
   },
   "devDependencies": {
     "covert": "^1.1.0",
-    "doctoc": "^0.15.0",
-    "eslint": "^1.6.0",
+    "doctoc": "^1.0.0",
+    "eslint": "^2.8.0",
     "faucet": "0.0.1",
-    "sinon": "^1.17.1",
-    "tape": "^4.2.1",
-    "watch": "^0.16.0"
+    "sinon": "^1.17.3",
+    "tape": "^4.5.1",
+    "watch": "^0.17.1"
   },
   "scripts": {
     "test": "node test/*.js | faucet",
@@ -42,8 +42,8 @@
   },
   "homepage": "https://github.com/alexlangberg/node-needle-schedule#readme",
   "dependencies": {
-    "needle-retry": "^1.0.0",
-    "node-schedule": "^0.2.9",
-    "ramda": "^0.18.0"
+    "needle-retry": "^1.1.1",
+    "node-schedule": "^1.1.0",
+    "ramda": "^0.21.0"
   }
 }
